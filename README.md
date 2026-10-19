@@ -38,7 +38,7 @@ through CAS. It then runs Moodle's mobile-app launch flow to get a
 web-service token. The token is cached in `~/.cache/iiit-moodle-mcp/token.json`
 (mode 600) and is refreshed automatically when it expires.
 
-Create a `.env` in this folder:
+Copy `.env.example` to `.env` and fill it in:
 
 ```env
 IIIT_USERNAME=firstname.lastname@students.iiit.ac.in
