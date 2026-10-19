@@ -1,0 +1,20 @@
+[project]
+name = "iiit-moodle-mcp"
+version = "0.1.0"
+description = "MCP server for IIIT Hyderabad Moodle (courses.iiit.ac.in)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+iiit-moodle-mcp = "iiit_moodle_mcp.server:mcp.run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["iiit_moodle_mcp"]
